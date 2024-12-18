@@ -159,6 +159,22 @@ html {
   .sliderItem:nth-child(5) .sliderPrice {
     color: cornsilk;
   }
+
+  .sliderItem:nth-child(1) .buyButton {
+    background-color: #369e62;
+  }
+  .sliderItem:nth-child(2) .buyButton {
+    background-color: rebeccapurple;
+  }
+  .sliderItem:nth-child(3) .buyButton {
+    background-color: teal;
+  }
+  .sliderItem:nth-child(4) .buyButton {
+    background-color: cornflowerblue;
+  }
+  .sliderItem:nth-child(5) .buyButton {
+    background-color: rgb(124, 115, 80);
+  }
   
   .features {
     display: flex;
