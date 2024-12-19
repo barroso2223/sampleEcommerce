@@ -349,6 +349,7 @@ html {
   
   .productButton {
     float: right;
+    text-decoration: none;
     padding: 10px 20px;
     background-color: black;
     color: white;
@@ -359,6 +360,11 @@ html {
   .productButton:hover {
     background-color: white;
     color: black;
+  }
+
+  .productButton a {
+    text-decoration: none;
+    color: white;
   }
   
   .gallery {
