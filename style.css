@@ -557,7 +557,7 @@ html {
   
     .buyButton{
       border: 2px solid lightgrey;
-      font-size: 1rem;
+      font-size: 1.5rem;
       right: 1%;
       top: 0;
     }
@@ -603,6 +603,12 @@ html {
       left: 30%;
       margin: auto;
       padding-bottom: 9rem;
+    }
+
+    .product .viewCart {
+      margin: auto;
+      margin-top: .5rem;
+      font-size: .9rem;
     }
   
     .gallery{
