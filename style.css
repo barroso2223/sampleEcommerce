@@ -74,6 +74,7 @@ html {
     align-items: center;
     justify-content: center;
     position: relative;
+    gap: 1rem;
   }
   
   .sliderBg {
@@ -91,7 +92,7 @@ html {
     position: absolute;
     top: 10%;
     right: 10%;
-    font-size: 60px;
+    font-size: clamp(30px, 3vw, 60px);
     font-weight: 900;
     text-align: center;
     color: white;
@@ -109,23 +110,49 @@ html {
     border: 1px solid gray;
     z-index: 1;
   }
-  
-  .buyButton {
+
+  .buttonContainerSlider {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
     position: absolute;
     top: 50%;
     right: 10%;
-    font-size: 30px;
+  }
+  
+  .moreDetailButton .buyButton {
+    top: 50%;
+    right: 10%;
+    font-size: 25px;
     font-weight: 900;
-    color: white;
+    color: black;
     border: 2px solid white;
-    background-color: black;
     z-index: 1;
     cursor: pointer;
   }
   
-  .buyButton:hover {
+  .moreDetailButton .buyButton:hover {
+    background: white;
+    color: white;
+    box-shadow: 3px 3px 10px white;
+  }
+  
+  .buyNowButton .buyButton {
+    top: 55%;
+    right: 10%;
+    font-size: 30px;
+    font-weight: 900;
+    border: 1px solid white;
+    z-index: 1;
+    cursor: pointer;
+  }
+  
+  .buyNowButton .buyButton:hover {
     background-color: white;
-    color: black;
+    color: white;
+    box-shadow: 3px 3px 10px white;
   }
 
   .addToCart {
@@ -204,6 +231,40 @@ html {
   .sliderItem:nth-child(5) .buyButton {
     background-color: rgb(124, 115, 80);
   }
+
+  .sliderItem:nth-child(1) .buyNowButton .buyButton {
+    background-color: yellow;
+  }
+  .sliderItem:nth-child(2) .buyNowButton .buyButton {
+    background-color: yellow;
+  }
+  .sliderItem:nth-child(3) .buyNowButton .buyButton {
+    background-color: yellow;
+  }
+  .sliderItem:nth-child(4) .buyNowButton .buyButton {
+    background-color: yellow;
+  }
+  .sliderItem:nth-child(5) .buyNowButton .buyButton {
+    background-color: yellow;
+  }
+
+  .sliderItem:nth-child(1) .buyNowButton .buyButton:hover {
+    background-color: #369e62;
+  }
+  .sliderItem:nth-child(2) .buyNowButton .buyButton:hover {
+    background-color: rebeccapurple;
+  }
+  .sliderItem:nth-child(3) .buyNowButton .buyButton:hover {
+    background-color: teal;
+  }
+  .sliderItem:nth-child(4) .buyNowButton .buyButton:hover {
+    background-color: cornflowerblue;
+  }
+  .sliderItem:nth-child(5) .buyNowButton .buyButton:hover {
+    background-color: rgb(124, 115, 80);
+  }
+
+  
   
   .features {
     display: flex;
@@ -408,6 +469,94 @@ html {
     text-decoration: none;
     color: white;
   }
+
+  #orderProduct {
+    width: 100dvw;
+    min-height: 90dvh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem auto;
+    color: white;
+    background-image: url("https://images.unsplash.com/photo-1604147495798-57beb5d6af73?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2370&q=80");
+    box-shadow: 5px 5px 20px black;
+  }
+
+  #orderProduct > h2 {
+    font-size: 5rem;
+    font-weight: 700;
+    
+  }
+
+  .itemGrid {
+    display: grid;
+    width: 95dvw;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    place-content: center;
+    gap: 1rem;
+    padding: 2rem;
+    margin: 0 auto;
+  }
+
+  .itemContainer {
+    position: relative;
+    width: 300px;
+    height: 325px;
+    text-align: left;
+    padding: 1rem;
+    border: 2px solid white;
+    display: flex;
+    flex-direction: column;
+    font-size: 1rem;
+    font-weight: 200;
+    line-height: 1.2;
+    box-shadow: 3px 3px 10px white;
+    background-color: rgba(250, 250, 250, 0.4);
+  }
+
+  .itemContainer img {
+    width: 60%;
+    height: auto;
+  }
+
+  .itemContainer  h2 { 
+    font-size: 2rem;
+    font-weight: 300;
+    position: absolute;
+    bottom: 1px;
+    left: 13px;
+  }
+
+  .itemContainer form {
+    position: absolute;
+    content: "";
+    bottom: 10px;
+    right: 10px;
+  }
+
+  .addButton:hover {
+    box-shadow: 3px 3px 10px white;
+    border-radius: 1rem;
+  }
+
+  #viewCartButton {
+    border: 1px solid black;
+    border-radius: 1rem;
+    color: white;
+    text-decoration: none;
+    font-weight: 700;
+    text-align: center;
+    background-color: blue;
+    padding: 4px 20px;
+    margin-top: .5rem;
+  }
+
+  #viewCartButton:hover {
+    color: blue;
+    background: white;
+    box-shadow: 3px 3px 10px blue;
+  }
   
   .gallery {
     padding: 50px;
@@ -554,12 +703,19 @@ html {
       left: 0;
       background-color: lightgrey;
     }
+
+    .buttonContainerSlider {
+      position: absolute;
+      top: 40;
+      right: 0;
+      text-align: right;
+      z-index: 5;
+      scale: .7;
+    }
   
     .buyButton{
       border: 2px solid lightgrey;
       font-size: 1.5rem;
-      right: 1%;
-      top: 0;
     }
 
     .addToCart {
@@ -612,6 +768,8 @@ html {
     }
   
     .gallery{
+      display: flex;
+      flex-direction: column;
       display: none;
     }
   
@@ -672,6 +830,7 @@ html {
   
     .sliderImg{
       width: 90%;
+      z-index: 1;
     }
   
     .sliderBg{
@@ -680,7 +839,10 @@ html {
     }
   
     .sliderTitle{
-      display: none;
+      /* display: none; */
+      top: 50;
+      bottom: unset;
+      right: 30;
     }
   
     .sliderPrice{
@@ -689,12 +851,19 @@ html {
       left: 0;
       background-color: lightgrey;
     }
+
+    .buttonContainerSlider {
+      position: absolute;
+      top: 250;
+      right: 30;
+      line-height: 1;
+      z-index: 5;
+    }
   
     .buyButton{
       border: 2px solid lightgrey;
-      right: 2%;
-      top: 0;
-      margin-bottom: 3rem;
+      margin-bottom: .25rem;
+      z-index: 2;
     }
 
     .addToCart {
@@ -743,6 +912,13 @@ html {
       margin: auto;
       padding-bottom: 10rem;
       top: 125%;
+    }
+
+    #orderProduct {
+      margin: 0 auto;
+      text-align: center;
+      place-content: center;
+      align-items: center;
     }
   
     .gallery{

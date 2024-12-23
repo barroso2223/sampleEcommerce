@@ -124,6 +124,42 @@ currentProductSizes.forEach((size, index) => {
   });
 });
 
+let paypalCartUrl = "";
+
+// Function to handle adding items to the cart
+function addToCart(itemId) {
+  // Simulate the PayPal "Add to Cart" action
+  const url = `https://www.paypal.com/webapps/shoppingcart?mfid=1734968755004_${itemId}&flowlogging_id=f616331832149#/checkout/shoppingCart`;
+
+  if (!paypalCartUrl) {
+    paypalCartUrl = url; // Store the cart URL if not already stored
+    localStorage.setItem("paypalCartUrl", paypalCartUrl); // Save it to localStorage
+  }
+
+  window.open(url, "_blank");
+}
+
+// Function to update the "View Cart" button
+function updateViewCartButton() {
+  const viewCartButton = document.getElementById("viewCartButton");
+  const storedUrl = localStorage.getItem("paypalCartUrl");
+
+  if (storedUrl) {
+    viewCartButton.href = storedUrl; // Set the button link to the stored URL
+    viewCartButton.style.display = "block"; // Ensure the button is visible
+  } else {
+    viewCartButton.style.display = "none"; // Hide the button if no URL is available
+  }
+}
+
+// Ensure the DOM is fully loaded before attempting to interact with it
+document.addEventListener("DOMContentLoaded", function () {
+  updateViewCartButton(); // Update the button on DOMContentLoaded
+});
+
+
+
+
 // const productButton = document.querySelector(".productButton");
 // const payment = document.querySelector(".payment");
 // const close = document.querySelector(".close");

@@ -7,6 +7,7 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
         rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
     <link rel="stylesheet" href="style.css">
     <title>Barroso Digital Ecommerce sample</title>
 </head>
@@ -15,12 +16,12 @@
     <nav id="nav">
         <div class="navTop">
             <div class="navItem">
-                <img src="/images/sneakers.png" alt="">
+                <img src="/images/sneakers.png" alt="" loading="lazy">
             </div>
             <div class="navItem">
                 <div class="search">
                     <input type="text" placeholder="Search..." class="searchInput">
-                    <img src="/images/search.png" width="20" height="20" alt="" class="searchIcon">
+                    <img src="/images/search.png" width="20" height="20" alt="" class="searchIcon" loading="lazy">
                 </div>
             </div>
             <div class="navItem">
@@ -38,82 +39,126 @@
     <div class="slider">
         <div class="sliderWrapper">
             <div class="sliderItem">
-                <img src="/images/air.png" alt="" class="sliderImg">
+                <img src="/images/air.png" alt="" class="sliderImg" loading="lazy">
                 <div class="sliderBg"></div>
                 <h1 class="sliderTitle">AIR FORCE</br> NEW</br> SEASON</h1>
                 <h2 class="sliderPrice">$119</h2>
-                <a href="#product">
-                    <button class="buyButton">MORE DETAILS!</button>
-                </a>
-                
+                <div class="buttonContainerSlider">
+                  <div class="moreDetailButton">
+                    <a href="#product">
+                        <button class="buyButton">MORE DETAILS!</button>
+                    </a>
+                  </div>
+                  <div class="buyNowButton">
+                    <a href="#orderProduct">
+                        <button class="buyButton">BUY NOW!</button>
+                    </a>
+                  </div>
+                </div>
             </div>
             <div class="sliderItem">
-                <img src="/images/jordan.png" alt="" class="sliderImg">
+                <img src="/images/jordan.png" alt="" class="sliderImg" loading="lazy">
                 <div class="sliderBg"></div>
                 <h1 class="sliderTitle">AIR JORDAN</br> NEW</br> SEASON</h1>
                 <h2 class="sliderPrice">$149</h2>
-                <a href="#product">
-                    <button class="buyButton">MORE DETAILS!</button>
-                </a>
+                <div class="buttonContainerSlider">
+                  <div class="moreDetailButton">
+                    <a href="#product">
+                        <button class="buyButton">MORE DETAILS!</button>
+                    </a>
+                  </div>
+                  <div class="buyNowButton">
+                    <a href="#orderProduct">
+                        <button class="buyButton">BUY NOW!</button>
+                    </a>
+                  </div>
+                </div>
             </div>
             <div class="sliderItem">
-                <img src="/images/blazer.png" alt="" class="sliderImg">
+                <img src="/images/blazer.png" alt="" class="sliderImg" loading="lazy">
                 <div class="sliderBg"></div>
                 <h1 class="sliderTitle">BLAZER</br> NEW</br> SEASON</h1>
                 <h2 class="sliderPrice">$109</h2>
-                <a href="#product">
-                    <button class="buyButton">MORE DETAILS!</button>
-                </a>
+                <div class="buttonContainerSlider">
+                  <div class="moreDetailButton">
+                    <a href="#product">
+                        <button class="buyButton">MORE DETAILS!</button>
+                    </a>
+                  </div>
+                  <div class="buyNowButton">
+                    <a href="#orderProduct">
+                        <button class="buyButton">BUY NOW!</button>
+                    </a>
+                  </div>
+                </div>
             </div>
             <div class="sliderItem">
-                <img src="/images/crater.png" alt="" class="sliderImg">
+                <img src="/images/crater.png" alt="" class="sliderImg" loading="lazy">
                 <div class="sliderBg"></div>
                 <h1 class="sliderTitle">CRATER</br> NEW</br> SEASON</h1>
                 <h2 class="sliderPrice">$129</h2>
-                <a href="#product">
-                    <button class="buyButton">MORE DETAILS!</button>
-                </a>
+                <div class="buttonContainerSlider">
+                  <div class="moreDetailButton">
+                    <a href="#product">
+                        <button class="buyButton">MORE DETAILS!</button>
+                    </a>
+                  </div>
+                  <div class="buyNowButton">
+                    <a href="#orderProduct">
+                        <button class="buyButton">BUY NOW!</button>
+                    </a>
+                  </div>
+                </div>
             </div>
             <div class="sliderItem">
-                <img src="/images/hippie.png" alt="" class="sliderImg">
+                <img src="/images/hippie.png" alt="" class="sliderImg" loading="lazy">
                 <div class="sliderBg"></div>
                 <h1 class="sliderTitle">HIPPIE</br> NEW</br> SEASON</h1>
                 <h2 class="sliderPrice">$99</h2>
-                <a href="#product">
-                    <button class="buyButton">MORE DETAILS!</button>
-                </a>
+                <div class="buttonContainerSlider">
+                  <div class="moreDetailButton">
+                    <a href="#product">
+                        <button class="buyButton">MORE DETAILS!</button>
+                    </a>
+                  </div>
+                  <div class="buyNowButton">
+                    <a href="#orderProduct">
+                        <button class="buyButton">BUY NOW!</button>
+                    </a>
+                  </div>
+                </div>
             </div>
         </div>
     </div>
    
     <div class="features">
         <div class="feature">
-            <img src="/images/shipping.png" alt="" class="featureIcon">
+            <img src="/images/shipping.png" alt="" class="featureIcon" loading="lazy">
             <span class="featureTitle">FREE SHIPPING</span>
             <span class="featureDesc">Free worldwide shipping on all orders.</span>
         </div>
         <div class="feature">
-            <img class="featureIcon" src="/images/return.png" alt="">
+            <img class="featureIcon" src="/images/return.png" alt="" loading="lazy">
             <span class="featureTitle">30 DAYS RETURN</span>
             <span class="featureDesc">No question return and easy refund in 14 days.</span>
         </div>
         <div class="feature">
-            <img class="featureIcon" src="/images/gift.png" alt="">
+            <img class="featureIcon" src="/images/gift.png" alt="" loading="lazy">
             <span class="featureTitle">GIFT CARDS</span>
             <span class="featureDesc">Buy gift cards and use coupon codes easily.</span>
         </div>
         <div class="feature">
-            <img class="featureIcon" src="/images/contact.png" alt="">
+            <img class="featureIcon" src="/images/contact.png" alt="" loading="lazy">
             <span class="featureTitle">CONTACT US!</span>
             <span class="featureDesc">Keep in touch via email and support system.</span>
         </div>
     </div>
 
     <div class="product" id="product">
-        <img src="/images/air.png" alt="Air Jordans" class="productImg">
+        <img src="/images/air.png" alt="Air Jordans" class="productImg" loading="lazy">
         <div class="productDetails">
             <h1 class="productTitle">AIR FORCE</h1>
-            <h2 class="productPrice">$199</h2>
+            <h2 class="productPrice">$119</h2>
             <p class="productDesc">SAMPLE SITE DO NOT PURCHASE ANYTHING! NO ACTUAL PRODUCTS AVAILABLE!!</p>
             <div class="colors">
                 <div class="color"></div>
@@ -124,8 +169,41 @@
                 <div class="size">11</div>
                 <div class="size">12</div>
             </div>
-            <div class="addToCart">
-                  <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank">
+            <button class="productButton"><a href="#orderProduct" target="_blank">BUY NOW!</a></button>
+        </div>
+        
+        <div class="payment">
+            <h1 class="payTitle">Personal Information</h1>
+            <label>Name and Surname</label>
+            <input type="text" placeholder="John Doe" class="payInput">
+            <label>Phone Number</label>
+            <input type="text" placeholder="+1 234 5678" class="payInput">
+            <label>Address</label>
+            <input type="text" placeholder="Elton St 21 22-145" class="payInput">
+            <h1 class="payTitle">Card Information</h1>
+            <div class="cardIcons">
+                <img src="/images/visa.png" width="40" alt="" class="cardIcon" loading="lazy">
+                <img src="/images/master.png" alt="" width="40" class="cardIcon" loading="lazy">
+            </div>
+            <input type="password" class="payInput" placeholder="Card Number">
+            <div class="cardInfo">
+                <input type="text" placeholder="mm" class="payInput sm">
+                <input type="text" placeholder="yyyy" class="payInput sm">
+                <input type="text" placeholder="cvv" class="payInput sm">
+            </div>
+            <button class="payButton">Checkout!</button>
+            <span class="close">X</span>
+        </div>
+    </div>
+    <section id="orderProduct">
+        <h2>ORDER NOW</h2>
+        <div class="itemGrid">
+            <div class="itemContainer">
+                <img src="/images/air.png" alt="" class="itemImage" loading="lazy">
+                <div class="itemBg"></div>
+                <h1 class="itemTitle">AIR FORCE</br> NEW SEASON</h1>
+                <h2 class="itemPrice">$119</h2>
+                <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank">
                     <input type="hidden" name="cmd" value="_s-xclick" />
                     <input type="hidden" name="hosted_button_id" value="3TEHUTBXUR3AL" />
                     <table>
@@ -170,54 +248,252 @@
                       </tr>
                     </table>
                     <input type="hidden" name="currency_code" value="USD" />
-                    <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_cart_LG.gif" border="0" name="submit" title="PayPal - The safer, easier way to pay online!" alt="Add to Cart" />
+                    <input type="image" class="addButton" src="https://www.paypalobjects.com/en_US/i/btn/btn_cart_LG.gif" border="0" name="submit" title="PayPal - The safer, easier way to pay online!" alt="Add to Cart" />
+                    <a id="viewCartButton" href="#" style="display: none;">View Cart</a>
                   </form>
                   
-        </div>
-        <div class="payment">
-            <h1 class="payTitle">Personal Information</h1>
-            <label>Name and Surname</label>
-            <input type="text" placeholder="John Doe" class="payInput">
-            <label>Phone Number</label>
-            <input type="text" placeholder="+1 234 5678" class="payInput">
-            <label>Address</label>
-            <input type="text" placeholder="Elton St 21 22-145" class="payInput">
-            <h1 class="payTitle">Card Information</h1>
-            <div class="cardIcons">
-                <img src="/images/visa.png" width="40" alt="" class="cardIcon">
-                <img src="/images/master.png" alt="" width="40" class="cardIcon">
             </div>
-            <input type="password" class="payInput" placeholder="Card Number">
-            <div class="cardInfo">
-                <input type="text" placeholder="mm" class="payInput sm">
-                <input type="text" placeholder="yyyy" class="payInput sm">
-                <input type="text" placeholder="cvv" class="payInput sm">
+            <div class="itemContainer">
+                <img src="/images/jordan.png" alt="" class="itemImage" loading="lazy">
+                <div class="itemBg"></div>
+                <h1 class="itemTitle">AIR JORDAN</br> NEW SEASON</h1>
+                <h2 class="itemPrice">$149</h2>
+                <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank">
+                    <input type="hidden" name="cmd" value="_s-xclick" />
+                    <input type="hidden" name="hosted_button_id" value="6TKV27CX8RHXS" />
+                    <table>
+                      <tr>
+                        <td>
+                          <input type="hidden" name="on0" value="Color"/>
+                          Color
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <select name="os0">
+                            <option value="Grey">
+                              Grey
+                            </option>
+                            <option value="Green">
+                              Green
+                            </option>
+                          </select>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <input type="hidden" name="on1" value="Size"/>
+                          Size
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <select name="os1">
+                            <option value="10">
+                              10
+                            </option>
+                            <option value="11">
+                              11
+                            </option>
+                            <option value="12">
+                              12
+                            </option>
+                          </select>
+                        </td>
+                      </tr>
+                    </table>
+                    <input type="hidden" name="currency_code" value="USD" />
+                    <input type="image" class="addButton" src="https://www.paypalobjects.com/en_US/i/btn/btn_cart_LG.gif" border="0" name="submit" title="PayPal - The safer, easier way to pay online!" alt="Add to Cart" />
+                    <a id="viewCartButton" href="#" style="display: none;">View Cart</a>
+                  </form>
             </div>
-            <button class="payButton">Checkout!</button>
-            <span class="close">X</span>
+            <div class="itemContainer">
+                <img src="/images/blazer.png" alt="" class="itemImage" loading="lazy">
+                <div class="itemBg"></div>
+                <h1 class="itemTitle">BLAZER</br> NEW SEASON</h1>
+                <h2 class="itemPrice">$109</h2>
+                <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank">
+                    <input type="hidden" name="cmd" value="_s-xclick" />
+                    <input type="hidden" name="hosted_button_id" value="RDZD27VNX85A6" />
+                    <table>
+                      <tr>
+                        <td>
+                          <input type="hidden" name="on0" value="Color"/>
+                          Color
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <select name="os0">
+                            <option value="Grey">
+                              Grey
+                            </option>
+                            <option value="Green">
+                              Green
+                            </option>
+                          </select>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <input type="hidden" name="on1" value="Size"/>
+                          Size
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <select name="os1">
+                            <option value="10">
+                              10
+                            </option>
+                            <option value="11">
+                              11
+                            </option>
+                            <option value="12">
+                              12
+                            </option>
+                          </select>
+                        </td>
+                      </tr>
+                    </table>
+                    <input type="hidden" name="currency_code" value="USD" />
+                    <input type="image" class="addButton" src="https://www.paypalobjects.com/en_US/i/btn/btn_cart_LG.gif" border="0" name="submit" title="PayPal - The safer, easier way to pay online!" alt="Add to Cart" />
+                    <a id="viewCartButton" href="#" style="display: none;">View Cart</a>
+                  </form>
+            </div>
+            <div class="itemContainer">
+                <img src="/images/crater.png" alt="" class="itemImage" loading="lazy">
+                <div class="itemBg"></div>
+                <h1 class="itemTitle">CRATER</br> NEW SEASON</h1>
+                <h2 class="itemPrice">$129</h2>
+                <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank">
+                    <input type="hidden" name="cmd" value="_s-xclick" />
+                    <input type="hidden" name="hosted_button_id" value="U57AESGR2SK42" />
+                    <table>
+                      <tr>
+                        <td>
+                          <input type="hidden" name="on0" value="Color"/>
+                          Color
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <select name="os0">
+                            <option value="Black">
+                              Black
+                            </option>
+                            <option value="Grey">
+                              Grey
+                            </option>
+                          </select>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <input type="hidden" name="on1" value="Size"/>
+                          Size
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <select name="os1">
+                            <option value="10">
+                              10
+                            </option>
+                            <option value="11">
+                              11
+                            </option>
+                            <option value="12">
+                              12
+                            </option>
+                          </select>
+                        </td>
+                      </tr>
+                    </table>
+                    <input type="hidden" name="currency_code" value="USD" />
+                    <input type="image" class="addButton" src="https://www.paypalobjects.com/en_US/i/btn/btn_cart_LG.gif" border="0" name="submit" title="PayPal - The safer, easier way to pay online!" alt="Add to Cart" />
+                    <a id="viewCartButton" href="#" style="display: none;">View Cart</a>
+                  </form>
+            </div>
+            <div class="itemContainer">
+                <img src="/images/hippie.png" alt="" class="itemImage" loading="lazy">
+                <div class="itemBg"></div>
+                <h1 class="itemTitle">HIPPIE</br> NEW SEASON</h1>
+                <h2 class="itemPrice">$99</h2>
+                <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank">
+                    <input type="hidden" name="cmd" value="_s-xclick" />
+                    <input type="hidden" name="hosted_button_id" value="EFXM7RGZGB8T8" />
+                    <table>
+                      <tr>
+                        <td>
+                          <input type="hidden" name="on0" value="Color"/>
+                          Color
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <select name="os0">
+                            <option value="Grey">
+                              Grey
+                            </option>
+                            <option value="Black">
+                              Black
+                            </option>
+                          </select>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <input type="hidden" name="on1" value="Size"/>
+                          Size
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <select name="os1">
+                            <option value="10">
+                              10
+                            </option>
+                            <option value="11">
+                              11
+                            </option>
+                            <option value="12">
+                              12
+                            </option>
+                          </select>
+                        </td>
+                      </tr>
+                    </table>
+                    <input type="hidden" name="currency_code" value="USD" />
+                    <input type="image" class="addButton" src="https://www.paypalobjects.com/en_US/i/btn/btn_cart_LG.gif" border="0" name="submit" title="PayPal - The safer, easier way to pay online!" alt="Add to Cart" />
+                    <a id="viewCartButton" href="#" style="display: none;">View Cart</a>
+                  </form>
+            </div>
         </div>
-    </div>
+                
+    </section>
+
     <div class="gallery">
         <div class="galleryItem">
             <h1 class="galleryTitle">Be Yourself!</h1>
             <img src="https://images.pexels.com/photos/9295809/pexels-photo-9295809.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500"
-                alt="" class="galleryImg">
+                alt="" class="galleryImg" loading="lazy">
         </div>
         <div class="galleryItem">
             <img src="https://images.pexels.com/photos/1040427/pexels-photo-1040427.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500"
-                alt="" class="galleryImg">
+                alt="" class="galleryImg" loading="lazy">
             <h1 class="galleryTitle">This is the First Day of Your New Life</h1>
         </div>
         <div class="galleryItem">
             <h1 class="galleryTitle">Just Do it!</h1>
             <img src="https://images.pexels.com/photos/7856965/pexels-photo-7856965.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500"
-                alt="" class="galleryImg">
+                alt="" class="galleryImg" loading="lazy">
         </div>
     </div>
     <div class="newSeason">
         <div class="nsItem">
             <img src="https://images.pexels.com/photos/4753986/pexels-photo-4753986.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500"
-                alt="" class="nsImg">
+                alt="" class="nsImg" loading="lazy">
         </div>
         <div class="nsItem">
             <h3 class="nsTitleSm">WINTER NEW ARRIVALS</h3>
@@ -229,7 +505,7 @@
         </div>
         <div class="nsItem">
             <img src="https://images.pexels.com/photos/7856965/pexels-photo-7856965.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500"
-                alt="" class="nsImg">
+                alt="" class="nsImg" loading="lazy">
         </div>
     </div>
     <footer>
@@ -276,10 +552,10 @@
             <div class="footerRightMenu">
                 <h1 class="fMenuTitle">Follow Us</h1>
                 <div class="fIcons">
-                    <img src="/images/facebook.png" alt="" class="fIcon">
-                    <img src="/images/twitter.png" alt="" class="fIcon">
-                    <img src="/images/instagram.png" alt="" class="fIcon">
-                    <img src="/images/whatsapp.png" alt="" class="fIcon">
+                    <img src="/images/facebook.png" alt="" class="fIcon" loading="lazy">
+                    <img src="/images/twitter.png" alt="" class="fIcon" loading="lazy">
+                    <img src="/images/instagram.png" alt="" class="fIcon" loading="lazy">
+                    <img src="/images/whatsapp.png" alt="" class="fIcon" loading="lazy">
                 </div>
             </div>
             <div class="footerRightMenu">
