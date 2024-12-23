@@ -774,11 +774,13 @@ html {
     }
 
     #orderProduct .itemTitle {
-      bottom: 100;
+      position: absolute;
+      bottom: 80;
     }
 
     #orderProduct .itemPrice {
-      bottom: 10;
+      position: absolute;
+      bottom: 15;
     }
   
     .gallery{
