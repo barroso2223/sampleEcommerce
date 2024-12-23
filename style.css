@@ -766,6 +766,20 @@ html {
       margin-top: .5rem;
       font-size: .9rem;
     }
+
+    #orderProduct {
+      padding-bottom: 4rem;
+      box-shadow: 5px 5px 20px lightgrey;
+      z-index: 1;
+    }
+
+    #orderProduct .itemTitle {
+      bottom: 100;
+    }
+
+    #orderProduct .itemPrice {
+      bottom: 10;
+    }
   
     .gallery{
       display: flex;
@@ -775,7 +789,7 @@ html {
   
     .newSeason{
       flex-direction: column;
-      margin-top: 12rem;
+      z-index: 1;
     }
   
     .nsItem:nth-child(2){
