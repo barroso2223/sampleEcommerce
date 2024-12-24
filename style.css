@@ -783,14 +783,17 @@ html {
     }
 
     #orderProduct {
+      height: auto;
       padding-bottom: 4rem;
       box-shadow: 5px 5px 20px lightgrey;
       z-index: 1;
-      margin: 0 auto;
+      justify-content: center;
+      align-items: center;
     }
 
     #orderProduct h2 {
-      font-size: 3.25rem;
+      font-size: 3rem;
+      text-align: center;
     }
 
     .itemOptions {
