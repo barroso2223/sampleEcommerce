@@ -785,6 +785,7 @@ html {
       padding-bottom: 4rem;
       box-shadow: 5px 5px 20px lightgrey;
       z-index: 1;
+      margin: 0 auto;
     }
 
     #orderProduct h2 {
@@ -929,15 +930,16 @@ html {
     }
   
     .product{
-      min-height: 100dvh;
+      min-height: auto;
       clip-path: none ;
       display: flex;
       flex-direction: column;
       align-items: center;
+      padding: 2rem;
     }
   
     .productImg{
-      width: 80%;
+      width: 40%;
     }
   
     .productDetails{
