@@ -124,19 +124,22 @@ currentProductSizes.forEach((size, index) => {
   });
 });
 
-let paypalCartUrl = "";
+let paypalCartUrl = localStorage.getItem("paypalCartUrl") || ""; // Initialize with existing stored URL, if any
 
 // Function to handle adding items to the cart
 function addToCart(itemId) {
-  // Simulate the PayPal "Add to Cart" action
-  const url = `https://www.paypal.com/webapps/shoppingcart?mfid=1734968755004_${itemId}&flowlogging_id=f616331832149#/checkout/shoppingCart`;
+  // Generate a unique URL for the PayPal cart
+  const url = `https://www.paypal.com/webapps/shoppingcart?mfid=${Date.now()}_${itemId}&flowlogging_id=${itemId}`;
 
-  if (!paypalCartUrl) {
-    paypalCartUrl = url; // Store the cart URL if not already stored
-    localStorage.setItem("paypalCartUrl", paypalCartUrl); // Save it to localStorage
-  }
+  // Update or set the cart URL in localStorage if it's not already set
+  paypalCartUrl = url;
+  localStorage.setItem("paypalCartUrl", paypalCartUrl);
 
+  // Open the new cart URL in a new tab
   window.open(url, "_blank");
+
+  // Update the "View Cart" button visibility
+  updateViewCartButton();
 }
 
 // Function to update the "View Cart" button
@@ -144,18 +147,20 @@ function updateViewCartButton() {
   const viewCartButton = document.getElementById("viewCartButton");
   const storedUrl = localStorage.getItem("paypalCartUrl");
 
+  // Check if there's a valid stored URL and display the button
   if (storedUrl) {
-    viewCartButton.href = storedUrl; // Set the button link to the stored URL
-    viewCartButton.style.display = "block"; // Ensure the button is visible
+    viewCartButton.href = storedUrl;  // Set the link to the stored cart URL
+    viewCartButton.style.display = "block";  // Ensure the button is visible
   } else {
-    viewCartButton.style.display = "none"; // Hide the button if no URL is available
+    viewCartButton.style.display = "none";  // Hide the button if no URL is available
   }
 }
 
 // Ensure the DOM is fully loaded before attempting to interact with it
 document.addEventListener("DOMContentLoaded", function () {
-  updateViewCartButton(); // Update the button on DOMContentLoaded
+  updateViewCartButton();  // Update the button when the page is ready
 });
+
 
 
 

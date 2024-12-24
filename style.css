@@ -502,7 +502,7 @@ html {
   .itemContainer {
     position: relative;
     width: 300px;
-    height: 325px;
+    height: 400px;
     text-align: left;
     padding: 1rem;
     border: 2px solid white;
@@ -516,7 +516,7 @@ html {
   }
 
   .itemContainer img {
-    width: 60%;
+    width: 70%;
     height: auto;
   }
 
@@ -773,14 +773,31 @@ html {
       z-index: 1;
     }
 
+    #orderProduct h2 {
+      font-size: 3.25rem;
+    }
+
+    .itemOptions {
+      position: absolute;
+      bottom: 100;
+      left: 0;
+      scale: .7;
+    }
+
+    .itemOptions .sizes {
+      font-size: 1rem;
+    }
+
     #orderProduct .itemTitle {
       position: absolute;
-      bottom: 80;
+      font-size: 1rem;
+      bottom: 50;
     }
 
     #orderProduct .itemPrice {
       position: absolute;
-      bottom: 15;
+      bottom: 10;
+      font-size: 1rem;
     }
   
     .gallery{
