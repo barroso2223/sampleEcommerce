@@ -793,7 +793,7 @@ html {
     }
 
     .itemGrid {
-      margin: 0 auto;
+      margin-inline: auto;
     }
 
     .itemContainer {
@@ -807,6 +807,7 @@ html {
 
     .itemOptions {
       position: absolute;
+      margin-inline: auto;
       bottom: 100;
       left: -10;
       scale: .7;
